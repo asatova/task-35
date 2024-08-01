@@ -1,6 +1,6 @@
 import {Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/css/bootstrap.css';
+import items from "ajv/lib/vocabularies/applicator/items";
 
 class App extends Component {
     state = {
@@ -41,6 +41,7 @@ class App extends Component {
     }
 
     render() {
+        const {players} = this.state
         return <div className="market">
             <div className="container">
                 <h1>Transfer market</h1>
@@ -54,14 +55,18 @@ class App extends Component {
                                 <th>Age</th>
                                 <th>Club</th>
                                 <th>Market value</th>
-
                             </tr>
                             </thead>
+                            <tbody>
+                            {players.map((item,index) =>
+                                <tr>
+                                    <td>{index+1}</td>
+                                </tr>)}
+                            </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <button className="btn-danger">asdasdasd</button>
 
         </div>;
     }
