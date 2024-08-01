@@ -1,4 +1,6 @@
 import {Component } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends Component {
     state = {
@@ -41,8 +43,26 @@ class App extends Component {
     render() {
         return <div className="market">
             <div className="container">
-                <h1>Transefer market</h1>
+                <h1>Transfer market</h1>
+                <div className="row">
+                    <div className="col">
+                        <table className="table">
+                            <thead className="thead-light">
+                            <tr>
+                                <th> N </th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Club</th>
+                                <th>Market value</th>
+
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
             </div>
+            <button className="btn-danger">asdasdasd</button>
+
         </div>;
     }
 }
