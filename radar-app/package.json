@@ -1,5 +1,5 @@
 {
-  "name": "radar-app",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,6 +38,6 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^8.17.1"
+    "ajv": "^7.2.4"
   }
 }
